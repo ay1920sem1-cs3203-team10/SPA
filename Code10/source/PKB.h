@@ -4,11 +4,11 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <unordered_map> 
 
 using namespace std;
 typedef short PROC;
 typedef int INDEX;
-typedef int INTEGER;
 
 class TNode;
 
@@ -23,6 +23,6 @@ public:
 	INDEX insertVariable(std::string variableName);
 	std::string getVariableName(INDEX index);
 	INDEX getVariableIndex(std::string variableName);
-	INTEGER getSize();
-	std::unordered_map<std::string, INTEGER> PKB::getVariables()
+	int getSize();
+	std::unordered_map<std::string, INDEX> PKB::getVariables();
 };
